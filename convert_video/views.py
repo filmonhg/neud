@@ -4,6 +4,11 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-     return HttpResponse("Test Video Converter")
+     if request.method == 'POST':
+          youtube_link=request.POST['name']
+          print(f"response posted {youtube_link}")
+
+     #return HttpResponse("Test now")
+     return render(request,'pages/index.html')
 
 

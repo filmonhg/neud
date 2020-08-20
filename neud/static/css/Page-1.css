@@ -1,0 +1,11 @@
+.u-section-1 .u-sheet-1 {min-height: 157px}
+.u-section-1 .u-form-1 {height: 77px; width: 1222px; margin: 40px -41px}
+.u-section-1 .u-btn-1 {background-image: none; border-style: none; font-weight: 700} 
+
+@media (max-width: 1199px){ .u-section-1 .u-form-1 {width: 570px; margin-left: 0; margin-right: 0} }
+
+@media (max-width: 767px){ .u-section-1 .u-form-1 {width: 540px} }
+
+@media (max-width: 575px){ .u-section-1 .u-form-1 {width: 340px}
+.u-section-1 .u-form-group-1 {width: 100%}
+.u-section-1 .u-form-group-2 {width: 100%} }.u-section-2 .u-sheet-1 {min-height: 500px}
