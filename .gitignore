@@ -4,8 +4,9 @@
 *.pyc
 __pycache__
 db.sqlite3
-media
-
+/media
+/static
+.vscode
 # Backup files # 
 *.bak 
 
