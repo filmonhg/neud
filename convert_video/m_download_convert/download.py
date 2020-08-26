@@ -34,7 +34,8 @@ def download(video_url='https://www.youtube.com/watch?v=tXOIvjbNhts'):
     youtube = pytube.YouTube(video_url)
     download_video_name = youtube.title+".mp4"
     logging.info(f"video title for download : {download_video_name}")
-    current_dir = os.getcwd()
+    #current_dir = os.getcwd()
+    current_dir = "/tmp"
     logging.info(f" current working dir: {current_dir} and filename : {download_video_name}")
     video = youtube.streams.first()
     #download_video_name = video.download('/tmp')  # path, where to video download.
