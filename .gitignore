@@ -12,6 +12,7 @@ db.sqlite3
 .DS_Store
 .mp4
 .mpeg
+venv/
 # If you are using PyCharm # 
 .idea/*
 .idea/**/workspace.xml 
