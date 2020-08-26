@@ -55,6 +55,7 @@ def download(video_url='https://www.youtube.com/watch?v=tXOIvjbNhts'):
         ffmpeg.run(stream,overwrite_output=True)
     except Exception as e:
         print(f"Error converting : {e}")
+        exit(1)
         logging.error(e)
 
     #stream = ffmpeg.input(os.path.join(current_dir,download_video_name))
