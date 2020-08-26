@@ -43,13 +43,16 @@ def download(video_url='https://www.youtube.com/watch?v=tXOIvjbNhts'):
     logging.info("Start converting .. ")
     print("Start converting .. ")
     try:
-        xxx = (
+        '''xxx = (
             ffmpeg
             .input(os.path.join(current_dir,download_video_name))
             .output(youtube.title+'.mpeg',vcodec='mpeg2video')
             .overwrite_output()
             .run(cmd='/home/bitnami/ffmpeg')
-        )
+        ) '''
+        stream = ffmpeg.input(os.path.join(current_dir,download_video_name))
+        out = ffmpeg.output(stream,youtube.title+'.mpeg')
+        ffmpeg.run(stream,overwrite_output=True)
     except Exception as e:
         print(f"Error converting : {e}")
         logging.error(e)
