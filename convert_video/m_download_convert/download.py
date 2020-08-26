@@ -48,7 +48,7 @@ def download(video_url='https://www.youtube.com/watch?v=tXOIvjbNhts'):
             .input(os.path.join(current_dir,download_video_name))
             .output(youtube.title+'.mpeg',vcodec='mpeg2video')
             .overwrite_output()
-            .run()
+            .run(cmd='/opt/bitnami/python/lib/python3.8/ffmpeg')
         )
     except Exception as e:
         print(f"Error converting : {e}")
