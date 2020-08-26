@@ -9,7 +9,9 @@ db.sqlite3
 .vscode
 # Backup files # 
 *.bak 
-
+.DS_Store
+.mp4
+.mpeg
 # If you are using PyCharm # 
 .idea/*
 .idea/**/workspace.xml 
